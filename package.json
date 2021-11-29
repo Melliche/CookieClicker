@@ -1,0 +1,36 @@
+{
+  "name": "cookieclicker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output styles.css styles.css",
+    "build-cleancss": "cleancss -o styles.css styles.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass styles.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melliche/CookieClicker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^6.1.3",
+    "rimraf": "^2.7.1"
+  },
+  "bugs": {
+    "url": "https://github.com/Melliche/CookieClicker/issues"
+  },
+  "homepage": "https://github.com/Melliche/CookieClicker#readme",
+  "dependencies": {
+    "sass": "^1.43.5"
+  }
+}

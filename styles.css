@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.header__content_directcookies {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.header__content_upgrade {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 15px   32px;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+}
+
+.header__cookie {
+  position: relative;
+  width: 30%;
+  height: 35%;
+}
+
+.header__cookie_imgcookie {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
