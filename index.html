@@ -15,17 +15,39 @@
 
     <header class="header">
 
-        <div class="header__content">
-            <p class="header__content_directupgrade" id="directupgrade"></p> 
-            <p class="header__content_directcookies" id="directcookies"></p>
-            <button class="header__content_upgrade" id="upgrade" onclick="automatic()">Upgrade</button>
+        <div class="header__container">
+
+            <div class="header__container_content">
+                <p class="header__container_content_directupgrade" id="directupgrade"></p> 
+                <p class="header__container_content_directcookies" id="directcookies"></p>
+                <button class="header__container_content_upgrade" id="upgrade" onclick="automatic()">Upgrade</button>
+                <div class="header__container_content_cookie" onclick="uppingcookies()">
+                    <img src="image/cookie.png" class="header__container_content_cookie_imgcookie">
+                </div>
+            </div>
+
+            <div class="header__container_board">
+
+                <div class="header__container_board_box">
+
+                    <p class="header__container_board_box_upprice" id="prixup"></p>
+                    <p class="header__container_board_box_upcookies" id="cookiesup"></p>
+
+
+
+
+                </div>
+
+
+            </div>
+            
+            
+
+
 
         </div>
+
         
-        <div class="header__cookie" onclick="uppingcookies()">
-            <img src="image/cookie.png" class="header__cookie_imgcookie">
-        
-        </div>
         
     </header>
 

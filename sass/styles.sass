@@ -1,35 +1,56 @@
 .header   
     display: flex
-    flex-direction: column
     justify-content: center
     align-items: center 
     height: 100vh
     width: 100vw
 
-    &__content
+    &__container
         display: flex
-        flex-direction: column
         align-items: center
-        padding-bottom: 3rem
+        flex-direction: columns
+        justify-content: space-between
+        width: 50rem
+        &_content
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            width: 22rem
+            padding-bottom: 3rem
 
-        &_directcookies
-            font-size: 1.3rem
-            padding-bottom: 1rem
+            &_directcookies
+                font-size: 1.3rem
+                padding-bottom: 1rem
 
-        &_upgrade
-            background-color: green
-            border: none
-            color: white
-            padding: 15px   32px
-            font-size: 1.2rem
-            border-radius: .5rem
-            
+            &_upgrade
+                background-color: green
+                border: none
+                color: white
+                padding: 15px   32px
+                font-size: 1.2rem
+                border-radius: .5rem
+            &_cookie
+                position: relative
+                width: 100%
+                // height: 35%
+                &_imgcookie
+                    width: 100%
+        &_board
+            display: flex
+            justify-content: center
+            align-items: center
 
-    &__cookie
-        position: relative
-        width: 30%
-        height: 35%
-
-        &_imgcookie
-            width: 100%
+            &_box
+                height: 25rem
+                width: 17rem
+                border: solid 2px grey
+                &_upprice
+                    width: 100%
+                    font-size: 1.5rem
+                    padding-top: 1.5rem
+                    padding-bottom: 1.5rem
+                &_upcookies
+                    width: 100%
+                    font-size: 1.5rem
 

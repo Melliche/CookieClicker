@@ -1,25 +1,34 @@
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
 }
 
-.header__content {
+.header__container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: columns;
+  justify-content: space-between;
+  width: 50rem;
+}
+
+.header__container_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 22rem;
   padding-bottom: 3rem;
 }
 
-.header__content_directcookies {
+.header__container_content_directcookies {
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
 
-.header__content_upgrade {
+.header__container_content_upgrade {
   background-color: green;
   border: none;
   color: white;
@@ -28,14 +37,37 @@
   border-radius: .5rem;
 }
 
-.header__cookie {
+.header__container_content_cookie {
   position: relative;
-  width: 30%;
-  height: 35%;
+  width: 100%;
 }
 
-.header__cookie_imgcookie {
+.header__container_content_cookie_imgcookie {
   width: 100%;
+}
+
+.header__container_board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container_board_box {
+  height: 25rem;
+  width: 17rem;
+  border: solid 2px grey;
+}
+
+.header__container_board_box_upprice {
+  width: 100%;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header__container_board_box_upcookies {
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

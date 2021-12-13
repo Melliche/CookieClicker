@@ -1,19 +1,17 @@
 let nb_cookies = 0;
 let price_upgrade = 8;
 let cookies_upgrade = 0;
-let isactiv = new Boolean(false);
+let cookies_upgrade_verif = 1;
+let totalcookies = 
+// let isactiv = new Boolean(false);
 
-setInterval(function cookiesnumber(){
-    
-    document.getElementById("directcookies").innerHTML = "Vous avez " + nb_cookies.toFixed(0) + " cookies";
 
-}, 20) 
 
 
 setInterval(function cookiesupgrades(){
-    
-    document.getElementById("directupgrade").innerHTML = "Vous générez chaque secondes " + cookies_upgrade.toFixed(0) + " cookies";
-
+    document.getElementById("directcookies").innerHTML = "Vous avez " + nb_cookies.toFixed(0) + " cookies";
+    document.getElementById("prixup").innerHTML = "Le coût de l'amélioration est de " + price_upgrade.toFixed(0) + " cookies.";
+    document.getElementById("cookiesup").innerHTML = "Vous générez chaque secondes " + cookies_upgrade.toFixed(1) + " cookies.";
 }, 20) 
 
 function uppingcookies(){
